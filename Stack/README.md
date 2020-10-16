@@ -1,6 +1,6 @@
 # 2020-10-17 Stack
 ## Stack?
-The "stack" temporarily stores that data.
+The "stack" temporarily stores that data.\n
 Putting data into the stack is called "push." 
 and Taking data out of the stack is called "pop."
 The stack processes the data in a Last-in-first-out fashion.
