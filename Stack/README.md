@@ -34,7 +34,7 @@ Indicates the number of data in the "ptr" stack.
 ## Stack-related functions (will be added slowly)
 #### Initialize
 "Initialize" is a function that initializes the stack. 
-``` 
+``` C
 int Initialize(IntStack *s, int max)
 {
     s->ptr = 0;
