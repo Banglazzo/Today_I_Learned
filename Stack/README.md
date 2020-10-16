@@ -14,7 +14,7 @@ The stack processes the data in a Last-in-first-out fashion.
 
 
 ## Stack_Structure
-![white](https://user-images.githubusercontent.com/66680536/96274741-d76f1c80-100b-11eb-87ae-d649e1efb676.png)
+![Stack](https://user-images.githubusercontent.com/66680536/96278388-63834300-1010-11eb-9ea6-ff725b43ef5c.png)
 
 Stacks can be implemented using a structure.
 
