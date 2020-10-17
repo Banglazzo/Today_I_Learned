@@ -31,7 +31,7 @@ Indicates the number of data in the "ptr" stack.
 
 
 
-## Stack-related functions (will be added slowly)
+## Stack-related functions
 #### Initialize
 "Initialize" is a function that initializes the stack. 
 ``` C
@@ -88,5 +88,71 @@ int Peek(IntStack *s, int *x)
 int Clear(IntStack *s)
 {
     s->ptr = 0;
+}
+```
+
+#### Capacity
+"Capacity" is a function that returns a value of 'max'.
+``` C
+int Capacity(const IntStack *s)
+{
+    return s->max;
+}
+```
+#### Size
+"Size" is a function that returns the value of 'ptr'.
+``` C
+int Size(const IntStack *s)
+{
+    return s->ptr;
+}
+```
+#### IsEmpty
+"IsEmpty" is a function that checks if the stack is empty.
+``` C
+int IsEmpty(const IntStack *s)
+{
+    return s->ptr <= 0;
+}
+```
+#### IsFull
+"IsFull" is a feature that verifies that the stack is full.
+``` C
+int IsFull(const IntStack *s)
+{
+    return s->ptr >= s->max;
+}
+```
+#### Search
+"Search" is a function that searches for any value in the stack.
+``` C
+int Search(const IntStack *s, int x)
+{
+    int i;
+    for(i = s->ptr - 1; i >= 0; i--)
+        if(s->stk[i] == x)
+            return i;
+    return -1;
+}
+```
+#### Print
+"print" is a function that outputs all the data in the stack.
+``` C
+int Print(const IntStack *s)
+{
+    int i;
+    for(i = 0; i < s->ptr; i++)
+        printf("%d", s->stk[i]);
+    printf("\n");
+}
+```
+#### Terminate
+"Terminate" is a function that is responsible for cleaning up behind.
+``` C
+int Terminate(IntStack *s)
+{
+    if(s->stk != NULL)
+        free(s->stk);
+    s->max = s->ptr = 0;
 }
 ```
