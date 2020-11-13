@@ -52,7 +52,7 @@
 저는 레고 마인드스톰 EV3 로봇을 사용했어요.
 
 
-![EV3](C:\Users\aria1\Desktop\Today_I_Learned\창의공학설계)
+![EV3](https://github.com/Banglazzo/Today_I_Learned/blob/master/%EC%B0%BD%EC%9D%98%EA%B3%B5%ED%95%99%EC%84%A4%EA%B3%84/EV3%20%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B9%99%20%EB%B2%A0%EC%9D%B4%EC%8A%A4(%EB%9D%BC%EC%9D%B8%ED%8A%B8%EB%A0%88%EC%9D%B4%EC%84%9C).jpg)
 
 
 (센서 연결 전에 찍은 사진이고 문제 될만한 것은 다 블러+모자이크 처리했어요)
