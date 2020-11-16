@@ -52,7 +52,7 @@
 저는 레고 마인드스톰 EV3 로봇을 사용했어요.
 
 
-![EV3](https://github.com/Banglazzo/Today_I_Learned/blob/master/%EC%B0%BD%EC%9D%98%EA%B3%B5%ED%95%99%EC%84%A4%EA%B3%84/EV3%20%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B9%99%20%EB%B2%A0%EC%9D%B4%EC%8A%A4(%EB%9D%BC%EC%9D%B8%ED%8A%B8%EB%A0%88%EC%9D%B4%EC%84%9C).jpg)
+![EV3](https://github.com/Banglazzo/Today_I_Learned/blob/master/%EC%B0%BD%EC%9D%98%EA%B3%B5%ED%95%99%EC%84%A4%EA%B3%84/img/EV3%20%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B9%99%20%EB%B2%A0%EC%9D%B4%EC%8A%A4(%EB%9D%BC%EC%9D%B8%ED%8A%B8%EB%A0%88%EC%9D%B4%EC%84%9C).jpg)
 
 
 (센서 연결 전에 찍은 사진이고 문제 될만한 것은 다 블러+모자이크 처리했어요)
@@ -112,3 +112,66 @@
 
 
 혹시나 오개념이 있다면 알려주세요.
+
+
+# 2020-11-16 창의 공학 설계3 (퀵 정렬 알고리즘)
+### 퀵 정렬 알고리즘의 기본 개념을 준비했습니다. 코드는 추후에 창의 공학 설계 폴더 안에 넣어놓도록 하겠습니다.
+
+## 퀵 정렬 알고리즘이란?
+이름처럼 정렬 알고리즘 중 가장 빠른 알고리즘입니다. 평균적으로 O(n log n)의 시간 복잡도를 갖습니다.
+
+
+값을 비교하는 방식으로 정렬하는 비교 정렬이며, 피봇이라는 기준 값을 두고 비교 연산을 수행합니다. 
+
+
+여기서 퀵 정렬 알고리즘의 단점을 알 수 있는데, 피봇 값에 따라 시간 복잡도가 O(n²)으로 나타나기도 합니다.
+
+
+## 그림으로 보는 퀵 정렬 알고리즘 
+![quick_sort1](https://github.com/Banglazzo/Today_I_Learned/blob/master/%EC%B0%BD%EC%9D%98%EA%B3%B5%ED%95%99%EC%84%A4%EA%B3%84/img/%ED%80%B5%20%EC%A0%95%EB%A0%AC1.PNG)
+
+
+arr[0]을 피봇 값으로 두었을 때 i와 j값입니다. 
+
+
+i는 피봇을 제외한 처음 원소부터 피봇 보다 큰 값을 가리킵니다.
+
+
+j는 피봇을 제외한 처음 원소부터 피봇 보다 작은 값을 가리킵니다.
+
+
+![quick_sort2](https://github.com/Banglazzo/Today_I_Learned/blob/master/%EC%B0%BD%EC%9D%98%EA%B3%B5%ED%95%99%EC%84%A4%EA%B3%84/img/%ED%80%B5%20%EC%A0%95%EB%A0%AC2.PNG)
+
+
+i와 j가 가리키는 값을 교환합니다. 
+
+
+이 과정을 반복하다가 값을 교환했을 때 i가 j보다 커질 경우 피봇과 j의 위치를 바꿉니다.
+
+
+![quick_sort3](https://github.com/Banglazzo/Today_I_Learned/blob/master/%EC%B0%BD%EC%9D%98%EA%B3%B5%ED%95%99%EC%84%A4%EA%B3%84/img/%ED%80%B5%20%EC%A0%95%EB%A0%AC3.PNG)
+
+
+![quick_sort4](https://github.com/Banglazzo/Today_I_Learned/blob/master/%EC%B0%BD%EC%9D%98%EA%B3%B5%ED%95%99%EC%84%A4%EA%B3%84/img/%ED%80%B5%20%EC%A0%95%EB%A0%AC4.PNG)
+
+
+이렇게 한 바퀴를 돌게 되면 피봇 값은 제 위치에 존재하게 됩니다.
+
+
+그리고 피봇 값을 기준으로 왼쪽엔 피봇 보다 작은 값이, 오른쪽에는 피봇 보다 큰 값이 존재하게 됩니다.
+
+
+
+![quick_sort5](https://github.com/Banglazzo/Today_I_Learned/blob/master/%EC%B0%BD%EC%9D%98%EA%B3%B5%ED%95%99%EC%84%A4%EA%B3%84/img/%ED%80%B5%20%EC%A0%95%EB%A0%AC5.PNG)
+
+
+(사진이 조금 잘렸네요. 죄송합니다.)
+
+
+이제 왼쪽과 오른쪽으로 나뉘어 각 리스트가 0이나 1이 될 때 까지 퀵 정렬을 실행합니다.
+
+
+![quick_sort6](https://github.com/Banglazzo/Today_I_Learned/blob/master/%EC%B0%BD%EC%9D%98%EA%B3%B5%ED%95%99%EC%84%A4%EA%B3%84/img/%ED%80%B5%20%EC%A0%95%EB%A0%AC6.PNG)
+
+
+![quick_sort7](https://github.com/Banglazzo/Today_I_Learned/blob/master/%EC%B0%BD%EC%9D%98%EA%B3%B5%ED%95%99%EC%84%A4%EA%B3%84/img/%ED%80%B5%20%EC%A0%95%EB%A0%AC7.PNG)
